@@ -16,7 +16,7 @@
 | Problem | Status | Comment
 | --- | :---: | --- |
 | [Exercise 1][i-ex1] | Done | |
-| [Exercise 2][i-ex2] | Not started | |
+| [Exercise 2][i-ex2] | Done | |
 | [Exercise 3][i-ex3] | Not started | |
 | [Exercise 4][i-ex4] | Not started | |
 | [Exercise 5][i-ex5] | Not started | |
