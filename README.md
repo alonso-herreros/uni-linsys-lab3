@@ -19,7 +19,7 @@
 | [Exercise 2][i-ex2] | Done | |
 | [Exercise 3][i-ex3] | Done | |
 | [Exercise 4][i-ex4] | Done | |
-| [Exercise 5][i-ex5] | Not started | |
+| [Exercise 5][i-ex5] | Done | |
 | [Exercise 6][i-ex6] | Not started | |
 | [Exercise 7][i-ex7] | Not started | |
 
