@@ -21,7 +21,7 @@
 | [Exercise 4][i-ex4] | Done | |
 | [Exercise 5][i-ex5] | Done | |
 | [Exercise 6][i-ex6] | Done | |
-| [Exercise 7][i-ex7] | Not started | |
+| [Exercise 7][i-ex7] | Done | |
 
 
 [i-ex1]: https://github.com/alonso-herreros/uni-linsys-lab3/issues/1
