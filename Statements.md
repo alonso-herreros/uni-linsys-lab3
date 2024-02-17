@@ -32,7 +32,11 @@ will appear and the recovered signal will be different from the original.
 ![Continuous and discrete fourier transforms plotted](res/cont_disc_ft.png)
 
 In this section we try to corroborate these results using sinusoidal signals of the type:
-$$x_c(t)=\cos(2\pi f_0 t), t \in \mathbb{R}$$
+
+$$
+x_c(t)=\cos(2\pi f_0 t), t \in \mathbb{R}
+$$
+
 As already seen in the previous laboratory exercises, it is not possible to work directly 
 with continuous signals in Matlab, but they can be accurately approximated by using a 
 sufficiently large number of samples (that is, using a sampling rate much higher than the 
@@ -40,11 +44,19 @@ minimum given by the sampling theorem). Also note that, given the inverse time-
 frequency relationship, for a continuous signal to be bandlimited, its temporal duration
 must be infinite. Obviously, it is not possible to simulate this in Matlab, so the signal that 
 you will work with will be:
-$$\bar{x}_c(t)=x_c(t)p(t), t \in \mathbb{R}$$
+
+$$
+\bar{x}_c(t)=x_c(t)p(t), t \in \mathbb{R}
+$$
+
 for some rectangular pulse whose duration will depend on the simulated signal 
 portion. Consequently, when working in the frequency domain, the Fourier Transform 
 becomes
-$$\hat{\bar{x}}_c(f)=\hat{x}_c(f) \ast \hat{p}(f), f\in \mathbb{R}$$
+
+$$
+\hat{\bar{x}}_c(f)=\hat{x}_c(f) \ast \hat{p}(f), f\in \mathbb{R}
+$$
+
 This fact must be considered when interpreting the computed Fourier Transforms.
 
 Once the simulated continuous signal is constructed, it will be sampled using the 
@@ -112,10 +124,18 @@ Does the obtained Fourier Transform resemble more closely the theoretical result
 
 To recover the continuous signal from the discrete sequence of its samples, we apply the 
 interpolation formula
-$$x_r(t) = \sum_{n=-\infty}^{\infty}x_d\left[n\right]h_r\left(t-nT_s\right), t \in \mathbb{R}$$
+
+$$
+x_r(t) = \sum_{n=-\infty}^{\infty}x_d\left[n\right]h_r\left(t-nT_s\right), t \in \mathbb{R}
+$$
+
 To achieve a perfect reconstruction, we would need to use the ideal reconstruction filter 
 with impulse response
-$$h_r(t)=\text{sinc}\left(\frac{t}{T_s}\right), t \in \mathbb{R}$$
+
+$$
+h_r(t)=\text{sinc}\left(\frac{t}{T_s}\right), t \in \mathbb{R}
+$$
+
 In principle, the value of this impulse response for a set of time instants can be obtained 
 by the Matlab command **`sinc`** if you have the Signal Processing Toolbox installed. If the 
 **`sinc`** command causes problems, you can implement the sinc function directly in Matlab
